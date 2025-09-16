@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fading Future</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar"> 
+        <div class="navdiv">
+            <div class="fading-future-logo">
+              <a href="/src/startPage/startpage.html">
+                <img class="logo-image" src="/src/resources/homepageImages/logoBlue.png" alt="Logo">
+              </a>
+              <p class="logo-text text-small bold">
+                  Fading <br> Future
+              </p>
+            </div>
+            <div class="start-header">
+              <ul class = "link-start">
+                <li>
+                  <a class="link-styling clicked-link-styling" href="/src/startPage/startpage.html">
+                    Start
+                  </a>
+                </li>
+                <li>
+                  <a class="link-styling" href="/src/statisticsPage/statisticspage.html">
+                    Statistics
+                  </a>
+                </li>
+                <li>
+                  <a class="link-styling" href="/src/actionPage/ActionPage.html">
+                    Solutions
+                  </a>
+                </li>
+              </ul>
+              <div class="language-section">
+                <i class="fa-solid fa-globe"></i>
+                <select class="language-options" onchange="languageChange()">
+                  <option value="eng-start">English</option>
+                  <option value="sv-start">Swedish</option>
+                </select>
+              </div>
+            </div>
+            <span class = "burger-menu-icon" onclick="openbarStart()">
+              &#9776; <!--&#9776 = menu icon  -->
+            </span> 
+            <ul class="burger-menu">
+              <li>
+                <a href="javascript:void(0)" class ="close-icon" onclick="closebarStart()">
+                  &#10005; <!-- &times = cross icon --> 
+                </a>
+              </li>
+              <li>
+                <a class="clicked-link-styling" href="/src/startPage/startpage.html">
+                  Start
+                </a>
+              </li>
+              <li>
+                <a class= "mobile-link-styling-not-clicked" href="/src/statisticsPage/statisticspage.html">
+                  Statistics
+                </a>
+              </li>
+              <li>
+                <a class= "mobile-link-styling-not-clicked" href="/src/actionPage/ActionPage.html">
+                  Solutions
+                </a>
+              </li>
+              
+            </ul>
+        </div>
+    </nav>
+  </header>
+
+  <main> 
+    <!-- FIRST SECTION -->
+    <div>
+      <img class="background-image" src= "/src/resources/homepageImages/oceanHomePage.jpg" alt="img">
+      <div id="first-screen-section">
+        <p class="text-bigger bold">
+          Amount of CO₂ emissions (tons)
+        </p>
+        <p id="counter-text" class="title">
+          Waiting for input...
+        </p>
+        <p class="text bold" id="year-text">
+          Fill in the boxes with a year to see the total amount of emissions over that period.
+        </p>
+        <div id= "startPage-inputs-counter">
+          <div id= "startPage-from">
+            <p class="text-small"> 
+              From
+            </p>
+            <input id="from-input-text-field" type="text" class="statpage-input" placeholder="Earliest: 1750" style = " border: 1px solid rgba(250, 250, 250, 0.925);">
+          </div>
+          <div id= "startPage-to">
+            <p class="text-small">
+              To
+            </p>
+            <input id = "to-input-text-field" type="text" class="statpage-input" placeholder="Latest: 2023" style = " border: 1px solid rgba(250, 250, 250, 0.925);">
+          </div>
+          <div id="startPage-button">
+            <button id="show-graph-button">
+              Calculate
+            </button>
+          </div>
+        </div>
+        <p id="stat-error-message" style="display: none; margin-top: 20px; color: rgb(232, 29, 29);"> 
+          Error, please enter valid years
+        </p>
+      </div>
+    </div>
+
+    <!-- STATISTICS AND SOLUTION SECTION -->
+    <div id="statistics-solution-section">
+      <div class="statistics-solution-column">
+        <p class="subtitle">
+          Statistics
+        </p>
+        <p class="text">
+          Knowledge about the problem is crucial we have the necessary statistics!
+        </p>
+        <button class = "buttons" onclick="location.href='/src/statisticsPage/statisticspage.html'">
+          Statistics →
+        </button>
+      </div>
+        
+      <div class="statistics-solution-column">
+        <p class="subtitle">
+          Solutions
+        </p>
+        <p class="text">
+          No matter who you are, you can contribute to slowing down emissions!
+        </p>
+        <button class = "buttons" onclick="location.href='/src/actionPage/ActionPage.html'">
+          Solutions →
+        </button>
+      </div>
+    </div>
+    
+    <!-- UN SECTION -->
+    <div id="UN-section">
+      <img class="background-image" src="/src/resources/homepageImages/waterImageDark3.0.png" alt="hav">
+      <img id="UN-logo-image" src="/src/resources/homepageImages/UN_emblem_blue.svg.png" alt="logo">
+
+      <div id="UN-block">
+        <p class="subtitle">
+          UN goal 13: Take urgent action
+        </p>
+        <p class="text">
+          This project is all about the UN's article 13 about climate change. 
+          We encourage you to read more on their website
+        </p>
+        <button class="buttons" onclick="window.location.href='https://sdgs.un.org/goals/goal13'">
+          Read More →
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-section">
+    <div class="footer-logo">
+      <img class="logo-image" src="/src/resources/homepageImages/logoBlue.png" alt="Logo">
+      <p class="subtitle">
+        Fading Future
+      </p>
+    </div>
+    <div class="footer-content">
+      <div class="footer-column">
+        <p class ="text underline">
+          About Us
+        </p>
+        <p class="text-small">
+          We're  an organization that tries to bridge the gap of knowledge about climate change. We truly believe that awareness is the catalyst of action.
+        </p>
+      </div>
+      <div class="footer-column">
+        <p class ="text underline">
+          Contact Us
+        </p>
+        <p class ="text-small underline">
+          Mail
+        </p>
+        <p class ="text-small">
+          <a href="mailto:FadingFuture@gmail.com">
+            FadingFuture@gmail.com
+          </a>
+        </p>
+        <p class ="text-small underline">
+          Phone
+        </p>
+        <p class ="text-small">
+          +46 70 725 75 12
+        </p>
+      </div>
+      <div class="footer-column">
+        <p class ="text underline">
+          Social media
+        </p>
+        <p>
+          <a class ="footer-text" href="https://facebook.com">
+            <span class="fa-brands fa-facebook"></span> 
+            Facebook
+          </a>
+        </p>
+        <p>
+          <a class ="footer-text" href="https://instagram.com">
+            <span class="fa-brands fa-instagram"></span> 
+            Instagram
+          </a>
+        </p>
+      </div>
+    </div>
+    <button class="buttons" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+      Back To Top ↑
+    </button>
+  </footer> 
+  
+  <!-- JAVASCRIPTS -->
+  <script src = ></script>
+
+</body>
+</html>
