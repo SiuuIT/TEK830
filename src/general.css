@@ -1,0 +1,286 @@
+/* --------- STYLING FOR THE ENTIRE PAGE --------- */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+/* -------------- GLOBAL VARIABLES --------------- */
+:root{
+    --color-white: #ffffff;
+    --font-weight-bold: bold;
+    --font-weight-bolder: 800;
+}
+
+/* ------------- GENERAL TEXT STYLING ------------ */
+p {
+    color: var(--color-white);
+    padding: 0 0 0 0; /* top, right, bottom, left*/
+    margin: 0 0 4px 0;
+}
+
+.title {
+    font-size: clamp(30px, 5vw, 95px); /* clamp makes the font size responsive */
+    font-weight: var(--font-weight-bolder);
+}
+
+.subtitle{
+    font-size: clamp(25px, 5vw, 40px);
+    font-weight: var(--font-weight-bold);
+}
+
+.text-bigger{
+    font-size: clamp(12px, 5vw, 30px);
+}
+
+.text{
+    font-size: clamp(12px, 5vw, 23px);
+}
+
+.text-small{
+    font-size: clamp(8px, 5vw, 16px);
+}
+
+.underline{
+    text-decoration: underline;
+    text-decoration-color: var(--color-white);
+}
+
+.bold{
+    font-weight: var(--font-weight-bold);
+}
+
+/* ----------- GENERAL BUTTON STYLING ------------ */
+.buttons {
+    width: clamp(160px, 5vw, 250px);
+    padding: 8px 16px;
+    font-size: clamp(3px, 5vw, 12px);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+/* ------- GENERAL BACKGROUND-IMAGE STYLING ------ */
+.background-image {
+    height: auto;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 90vh;
+}
+
+.logo-image{
+    width: 50px;
+    height: auto;
+}
+
+/* -------- GENERAL LIST / LINKS STYLING -------- */
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: var(--color-white);
+    font-weight: var(--font-weight-bold);
+}
+
+a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--color-white);
+    cursor: pointer;
+}
+
+/* ---------------- QUOTE SECTION ---------------- */
+.quote-container {
+    max-width: 1200px;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .quote-title {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .quote-text {
+    width: 70%;
+    margin: 10px auto;
+  }
+  
+  .quote-signature {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* -------------- RESPONSIVE @MEDIA FOR QUOTE-SECTION -------------- */
+@media (max-width: 850px) {
+    .quote-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+/* ----------- HEADER AND BURGER MENU ----------- */
+.navbar {
+    padding: 10px 15px;
+}
+  
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.start-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fading-future-logo {
+    display: flex;
+    align-items: center;
+}
+
+.link-styling{
+    margin-right: 40px;
+}
+
+.mobile-link-styling-not-clicked{
+  background-color: var(----color-blue);
+  border-radius: 9999px;
+  padding: 6px 12px;
+}
+
+.language-section{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    border-radius: 30px;
+    padding: 8px 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: var(--color-white);
+}
+  
+.language-options{
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    outline: None;
+ }
+
+.burger-menu-icon{
+    display: none; /* Hides the element from the start */
+}
+
+.burger-menu {
+    display: none;
+}
+
+.close-icon{
+    display: none;
+}
+
+/* ------------------ FOOTER ------------------- */
+.footer-section {
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box; /* padding included in the width */
+}
+
+.footer-logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-content {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px 0;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+
+/* -------------- RESPONSIVE @MEDIA -------------- */
+@media (max-width: 850px) {
+    .link-start {
+      display: none;
+    }
+
+    .logo-text{
+        display: None;
+    }
+  
+    .burger-menu-icon {
+      display: block;
+      font-size: 30px;
+      color: var(--color-white);
+      margin: 0 20px 5px 0; /* top, right, bottom, left*/
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    
+    .burger-menu {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 100vh;
+      transition: 0.5s;
+      padding-top: 10px;
+      overflow: hidden;
+      z-index: 2;
+    }
+  
+    .close-icon{
+      position: absolute; 
+      color: var(--color-white);
+      top: 0;
+      right: 20px; 
+    }
+  
+    .burger-menu a  {
+      margin: 12px 6px 12px 30px;
+      font-size: 16px;
+      display: block;
+    }
+}
