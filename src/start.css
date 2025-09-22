@@ -21,21 +21,6 @@ button:hover{
 }
 
 /* ----------- HEADER AND BURGER MENU ------------ */
-.navbar {
-  background-color: var(--color-blue);
-}
-
-.burger-menu {
-  background-color: var(--color-blue);
-}
-
-.language-section{
-  background-color: var(--color-lightblue);
-}
-
-.language-options {
-  background-color: var(--color-lightblue);
-}
 
 .clicked-link-styling{
   background-color: var(--color-lightblue);
