@@ -8,6 +8,7 @@ html, body {
     box-sizing: border-box;
     cursor: default;
     background-color: var(--color-white);
+    scroll-behavior: smooth;
 }
 
 /* -------------- GLOBAL VARIABLES --------------- */
@@ -175,12 +176,28 @@ a:hover{
 
 /* ------------- Presentation -------------- */
 #presentation-section {
-  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
+
+#presentation-title {
+  margin: 0 0 0 0;
+}
+
+#presentation-text {
+  max-width: 800px;
+}
+
+/* ------------- pitch-demo-section -------------- */
+
+#pitch-demo-section {
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+}
+
 
 
 

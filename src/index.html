@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="/src/style.css">
 </head>
+<!-- Se över att rubriker ska vara (h1 inte p)-->
+
 
 <body>
   <!-- HEADER -->
@@ -15,25 +17,35 @@
     <nav id="navbar"> 
         <div id="navdiv">
             <div id="forsiktigt-logo">
-              <p class="logo-text text-small bold">
+              <p class="logo-text text bold">
                   Försiktig
               </p>
             </div>
             <div class="start-header">
               <ul class = "link-start">
                 <li>
-                  <a class="link-styling" href="">
-                    Start
+                  <a class="link-styling" href=#presentation-section>
+                    Presentation
                   </a>
                 </li>
                 <li>
                   <a class="link-styling" href="">
-                    Pitch?
+                    Pitch video
                   </a>
                 </li>
                 <li>
                   <a class="link-styling" href="">
-                    About us
+                    Demo
+                  </a>
+                </li>
+                <li>
+                  <a class="link-styling" href="">
+                    Kontakt
+                  </a>
+                </li>
+                <li>
+                  <a class="link-styling" href="">
+                    AI and references
                   </a>
                 </li>
               </ul>
@@ -43,7 +55,8 @@
   </header>
 
   <main> 
-    <!-- Intoduktion -->
+    <!-- Intoduktion, ha till vänster och en bild sedan till höger om det som handlar om data analyses -->
+
     <section id="introduction-section">
       <div id="introduction-title">
         <h1 class="title">
@@ -59,15 +72,69 @@
 
     <!-- Presentation  -->
     <section id="presentation-section">
-      <h1 class="title"> 
-        Our journey
-      </h1>
+      <div id="presentation-title">
+        <p class="title"> 
+          Our journey
+        </p>
+      </div>
+      <div id="presentation-text">
+        <p class="text">
+          Join us as we break down the problem we tackled, the thinking behind our solution, and how we turned ideas into action.
+        </p>
+      </div>
       <div>
         <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQcYyQabQAmZQfalFa7RgwtJhO0AMuugA7SRYSjlz-NUdzPw5hlO8ET3TCB3ldiaAf9ABGtgsqAgOv4/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
       </div>
     </section>
 
     <!-- Pitch video -->
+    <section id="pitch-demo-section">
+      <div id="facts-block">
+        <div class="fact-item">
+          <p class="text-bigger">
+            Use försiktig
+          </p>
+          <p class="text">
+            📍 Real-Time Reporting:
+          </p>
+          <p>
+            Report incidents as they happen, ensuring timely assistance and accurate documentation.
+          </p>
+        </div>
+        <div class="fact-item">
+          <p class="text">
+            🧠 AI Analysis
+          </p>
+          <p>
+            Leverage AI to analyze incidents, providing insights and recommendations for future prevention.
+          </p>
+        </div>
+        <div class="fact-item">
+          <p class="text">
+            🔔 Status Updates 
+          </p>
+          <p>
+            Stay informed with real-time updates on your incident reports, ensuring you never miss a critical moment.
+          </p>
+        </div>
+        <div class="fact-item">
+          <p class="text">
+            📊 Data Visualization
+          </p>
+          <p>
+            Visualize incident data through intuitive dashboards, helping you identify trends and areas for improvement.
+          </p>
+        </div>
+      </div>
+      <div id="pitch-demo-block">
+        <div id="pitch-block">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="demo-block">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+     </section>
     <!-- skriv lite om vad det är som är bra osv -->
     
 
@@ -87,7 +154,7 @@
     <div class="footer-logo">
       <img class="logo-image" src="/src/resources/logo.jpg" alt="Logo">
       <p class="subtitle">
-        Försiktig bror
+        Försiktig
       </p>
     </div>
     <div class="footer-content">
