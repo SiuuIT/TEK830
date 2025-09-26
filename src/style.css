@@ -91,6 +91,11 @@ p {
     height: auto;
 }
 
+img{
+  border-radius: 50%;
+}
+
+
 /* -------- GENERAL LIST / LINKS STYLING -------- */
 ul {
     display: flex;
