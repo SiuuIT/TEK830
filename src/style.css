@@ -4,7 +4,7 @@ html, body {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     cursor: default;
     background-color: var(--color-white);
@@ -133,7 +133,7 @@ a:hover{
 /* ----------- HEADER AND BURGER MENU ----------- */
 #navbar {
   padding: 10px 15px;
-  /*background-color: red;*/
+  background-color: grey;
 }
   
 #navdiv {
@@ -157,6 +157,33 @@ a:hover{
 .link-styling{
     margin-right: 40px;
 }
+
+/* ----------- INTRODUCTION SECTION ------------ */
+#introduction-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+#introduction-text {
+  max-width: 800px;
+}
+
+/* ------------- Presentation -------------- */
+#presentation-section {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
 
 /* ------------------ FOOTER ------------------- */
 .footer-section {
