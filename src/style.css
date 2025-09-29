@@ -91,9 +91,27 @@ p {
     height: auto;
 }
 
-img{
-  border-radius: 50%;
+
+#among-us-bilder {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping to new row if needed */
+  justify-content: space-evenly; /* even spacing across */
+  gap: 20px; /* consistent padding between items */
+  text-align: center;
 }
+
+.person img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover; /* keeps images neat */
+  border-radius: 50%; /* optional: round corners */
+}
+
+.person p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
 
 
 /* -------- GENERAL LIST / LINKS STYLING -------- */
