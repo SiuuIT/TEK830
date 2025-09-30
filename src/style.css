@@ -71,6 +71,10 @@ p {
     font-weight: var(--font-weight-bold);
 }
 
+#among-us-title {
+  text-align: center;
+}
+
 /* ----------- GENERAL BUTTON STYLING ------------ */
 .buttons {
     width: clamp(160px, 5vw, 250px);
@@ -84,7 +88,7 @@ p {
     cursor: pointer;
 }
 
-/* ------- GENERAL BACKGROUND-IMAGE STYLING ------ */
+/* ------- GENERAL IMAGE STYLING ------ */
 .background-image {
     height: auto;
     object-fit: cover;
@@ -98,14 +102,26 @@ p {
     height: auto;
 }
 
+#kursinfo-etc {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;  
+  text-align: center;
+}
+
+#kursinfo-etc img {
+  width: 500px;  
+  height: 500px;
+}
 
 #among-us-bilder {
   display: flex;
-  flex-wrap: wrap; /* allows wrapping to new row if needed */
-  justify-content: space-evenly; /* even spacing across */
-  gap: 20px; /* consistent padding between items */
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+  gap: 20px; 
   text-align: center;
 }
+
 
 .person img {
   width: 150px;
