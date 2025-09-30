@@ -11,6 +11,12 @@ html, body {
     scroll-behavior: smooth;
 }
 
+body {
+  background-image: url(src/resources/tim.jpg);
+  background-size: cover;
+  /*background-color: red;*/
+}
+
 /* -------------- GLOBAL VARIABLES --------------- */
 :root{
     --color-white: #ffffff;
@@ -157,7 +163,6 @@ a:hover{
 /* ----------- HEADER AND BURGER MENU ----------- */
 #navbar {
   padding: 10px 15px;
-  background-color: grey;
 }
   
 #navdiv {
