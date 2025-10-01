@@ -252,12 +252,13 @@ a:hover{
   /*background-color: green;*/
 }
 
-/* ------------- Presentation -------------- */
-#presentation-section {
+/* ------------- Pitch -------------- */
+#pitch-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  height: 100vh; 
 }
 
 #presentation-title {
@@ -272,16 +273,47 @@ a:hover{
   width: 300px;
   height: auto;
 }
-
 /* ------------- pitch-demo-section -------------- */
 
+
+
+/* ------------- Demo-fact-presentation -------------- */
+
 #pitch-demo-section {
-  background-color: blue;
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
+  height: 130vh;
 }
 
+#facts-block{
+  background-color: lightgrey;
+  width: 600px;
+  height: 630px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+}
 
+.fact-item{
+  margin: 20px;
+  padding: 20px;
+}
+
+#pitch-demo-block{
+  width: 800px;
+
+}
+
+#pitch-block{
+  display: flex;
+  justify-content: flex-end;
+  margin: 25px;
+}
+
+#demo-block{
+  display: flex;
+  justify-content: flex-start;
+  margin: 25px;
+}
 
 /* ------------------ DESIGN ------------------- */
 #design-thinking-section {
