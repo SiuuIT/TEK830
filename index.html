@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -336,6 +335,17 @@
 
   <!-- JAVASCRIPTS -->
 
-</body>
+  <!-- Navbar fade effect-->
+  <script> 
+  window.addEventListener('scroll', function () {
+    const nav = document.getElementById('navdiv');
+    if (window.scrollY > 10) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
 
+</body>
 </html>
