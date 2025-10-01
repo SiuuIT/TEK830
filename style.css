@@ -12,8 +12,7 @@ html, body {
 }
 
 body {
-  background-image: url("../src/resources/data-analyst-background (1).jpg");
-  /*background-size: cover;*/
+  background-image: url("src/resources/data-analyst-background (1).jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 500px;
@@ -202,8 +201,12 @@ a:hover{
   left: 0;
   width: 100%;
   height: 70px;
-  background-color: rgba(241, 239, 239, 0.3); /* semi-transparent */
+  background-color: rgba(255, 255, 255, 0.6); /* semi-transparent */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*shadow*/
+}
+
+#navdiv.scrolled {
+  background-color: rgba(255, 255, 255, 0.97);
 }
 
 #filtrera-logo {
