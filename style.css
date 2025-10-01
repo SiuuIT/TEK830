@@ -4,7 +4,7 @@ html, body {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif;
     box-sizing: border-box;
     cursor: default;
     background-color: var(--color-white);
@@ -12,9 +12,11 @@ html, body {
 }
 
 body {
-  background-image: url(src/resources/tim.jpg);
-  background-size: cover;
-  /*background-color: red;*/
+  background-image: url("../src/resources/data-analyst-background (1).jpg");
+  /*background-size: cover;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
 }
 
 /* -------------- GLOBAL VARIABLES --------------- */
@@ -51,11 +53,11 @@ p {
 }
 
 .text-bigger{
-    font-size: clamp(12px, 5vw, 30px);
+    font-size: clamp(12px, 5vw, 28px);
 }
 
 .text{
-    font-size: clamp(12px, 5vw, 23px);
+    font-size: clamp(10px, 5vw, 19px);
 }
 
 .text-small{
@@ -195,9 +197,16 @@ a:hover{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(241, 239, 239, 0.3); /* semi-transparent */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*shadow*/
 }
 
-#forsiktigt-logo {
+#filtrera-logo {
   display: flex;
   align-items: center;
 }
@@ -215,16 +224,29 @@ a:hover{
 /* ----------- INTRODUCTION SECTION ------------ */
 #introduction-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: 100vh;
+  gap: 200px; 
+  height: 85vh;
   width: 100%;
+  margin: 25px 0 0 0; /* top, right, bottom, left */
+}
+
+#introduction-text-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 #introduction-text {
-  max-width: 800px;
+  max-width: 700px;
+}
+
+#introduction-image-block{
+  /*background-color: green;*/
 }
 
 /* ------------- Presentation -------------- */
@@ -241,6 +263,11 @@ a:hover{
 
 #presentation-text {
   max-width: 800px;
+}
+
+#introduction-image{
+  width: 300px;
+  height: auto;
 }
 
 /* ------------- pitch-demo-section -------------- */
