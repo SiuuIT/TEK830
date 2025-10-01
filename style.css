@@ -12,9 +12,11 @@ html, body {
 }
 
 body {
-  background-image: url(src/resources/tim.jpg);
+  background-image: url("../src/resources/backgorund-work.webp");
   background-size: cover;
-  /*background-color: red;*/
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* -------------- GLOBAL VARIABLES --------------- */
@@ -179,6 +181,8 @@ a:hover{
 /* ----------- HEADER AND BURGER MENU ----------- */
 #navbar {
   padding: 10px 15px;
+  background-color: rgba(241, 239, 239, 0.); /* semi-transparent */
+
 }
   
 #navdiv {
@@ -186,6 +190,7 @@ a:hover{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  /*position: fixed;*/
 }
 
 #forsiktigt-logo {
