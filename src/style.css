@@ -117,7 +117,7 @@ p {
 }
 
 #among-us-left img {
-  width: 500px;   /* bigger Chalmers logo */
+  width: 500px;
   height: auto;
 }
 
@@ -253,22 +253,60 @@ a:hover{
 
 
 
-/* ------------------ FOOTER ------------------- */
-#design-thinking-block{
-  background-color: lightgrey;
-  display: flex;
-  flex-direction: row;
+/* ------------------ DESIGN ------------------- */
+#design-thinking-section {
+  padding: 2rem;
+  background-color: #f9fafb;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-#design-thinking-title{
-  background-color: grey;
+#design-thinking-title {
   text-align: center;
+  background-color: #0058a3; /* IKEA blue */
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
 }
 
-.bility{
-  margin-left: 20px;
-  margin-right: 20px;
+#design-thinking-title p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
+
+#design-thinking-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.bility {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bility:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1);
+}
+
+.bility p:first-child {
+  font-weight: bold;
+  color: #0058a3; /* IKEA green */
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+
+.bility p {
+  margin: 0 0 0.8rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
 
 
 /* ------------------ FOOTER ------------------- */
