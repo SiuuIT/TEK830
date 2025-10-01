@@ -389,12 +389,13 @@ a:hover{
   /*background-color: green;*/
 }
 
-/* ------------- Presentation -------------- */
-#presentation-section {
+/* ------------- Pitch -------------- */
+#pitch-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  height: 100vh; 
 }
 
 #presentation-title {
@@ -409,12 +410,15 @@ a:hover{
   width: 300px;
   height: auto;
 }
-
 /* ------------- pitch-demo-section -------------- */
+
+
+
+/* ------------- Demo-fact-presentation -------------- */
 #pitch-demo-section {
-  background-color: blue;
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
+  height: 130vh;
 }
 
 /* ------------- among us -------------- */
