@@ -1,14 +1,15 @@
 /* --------- STYLING FOR THE ENTIRE PAGE --------- */
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Arial', sans-serif;
-    box-sizing: border-box;
-    cursor: default;
-    background-color: var(--color-white);
-    scroll-behavior: smooth;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  cursor: default;
+  background-color: var(--color-white);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,10 +20,10 @@ body {
 }
 
 /* -------------- GLOBAL VARIABLES --------------- */
-:root{
-    --color-white: #ffffff;
-    --font-weight-bold: bold;
-    --font-weight-bolder: 800;
+:root {
+  --color-white: #ffffff;
+  --font-weight-bold: bold;
+  --font-weight-bolder: 800;
 }
 
 /* -------------- GLOBAL VARIABLES --------------- */
@@ -30,46 +31,48 @@ button {
   background-color: var(--color-blue);
 }
 
-button:hover{
+button:hover {
   background-color: var(--color-lightblue);
 }
 
 /* ------------- GENERAL TEXT STYLING ------------ */
 p {
-    color: var(black);
-    padding: 0 0 0 0; /* top, right, bottom, left*/
-    margin: 0 0 4px 0;
+  color: var(black);
+  padding: 0 0 0 0;
+  /* top, right, bottom, left*/
+  margin: 0 0 4px 0;
 }
 
 .title {
-    font-size: clamp(30px, 5vw, 95px); /* clamp makes the font size responsive */
-    font-weight: var(--font-weight-bolder);
+  font-size: clamp(30px, 5vw, 95px);
+  /* clamp makes the font size responsive */
+  font-weight: var(--font-weight-bolder);
 }
 
-.subtitle{
-    font-size: clamp(25px, 5vw, 40px);
-    font-weight: var(--font-weight-bold);
+.subtitle {
+  font-size: clamp(25px, 5vw, 40px);
+  font-weight: var(--font-weight-bold);
 }
 
-.text-bigger{
-    font-size: clamp(12px, 5vw, 28px);
+.text-bigger {
+  font-size: clamp(12px, 5vw, 28px);
 }
 
-.text{
-    font-size: clamp(10px, 5vw, 19px);
+.text {
+  font-size: clamp(10px, 5vw, 19px);
 }
 
-.text-small{
-    font-size: clamp(8px, 5vw, 16px);
+.text-small {
+  font-size: clamp(8px, 5vw, 16px);
 }
 
-.underline{
-    text-decoration: underline;
-    text-decoration-color: var(black);
+.underline {
+  text-decoration: underline;
+  text-decoration-color: var(black);
 }
 
-.bold{
-    font-weight: var(--font-weight-bold);
+.bold {
+  font-weight: var(--font-weight-bold);
 }
 
 #among-us-title {
@@ -78,31 +81,164 @@ p {
 
 /* ----------- GENERAL BUTTON STYLING ------------ */
 .buttons {
-    width: clamp(160px, 5vw, 250px);
-    padding: 8px 16px;
-    font-size: clamp(3px, 5vw, 12px);
-    font-weight: var(--font-weight-bold);
-    color: var(white);
-    border: none;
-    border-radius: 50px;
-    transition: background-color 0.2s;
-    cursor: pointer;
+  width: clamp(160px, 5vw, 250px);
+  padding: 8px 16px;
+  font-size: clamp(3px, 5vw, 12px);
+  font-weight: var(--font-weight-bold);
+  color: var(white);
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.2s;
+  cursor: pointer;
 }
 
 /* ------- GENERAL IMAGE STYLING ------ */
 .background-image {
-    height: auto;
-    object-fit: cover;
-    display: block;
-    width: 100%;
-    height: 90vh;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 90vh;
 }
 
-.logo-image{
-    width: 50px;
-    height: auto;
+.logo-image {
+  width: 50px;
+  height: auto;
 }
 
+/* -------- GENERAL LIST / LINKS STYLING -------- */
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  color: var(black);
+  font-weight: var(--font-weight-bold);
+}
+
+a {
+  color: var(black);
+  text-decoration: none;
+
+}
+
+a:link {
+  color: black;
+
+}
+
+a:visited {
+  color: black;
+
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(black);
+  cursor: pointer;
+
+}
+
+/* ----------- HEADER AND BURGER MENU ----------- */
+#navbar {
+  padding: 10px 15px;
+}
+
+#navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(241, 239, 239, 0.3);
+  /* semi-transparent */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /*shadow*/
+}
+
+#filtrera-logo {
+  display: flex;
+  align-items: center;
+}
+
+.start-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.link-styling {
+  margin-right: 40px;
+}
+
+/* ----------- INTRODUCTION SECTION ------------ */
+#introduction-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 200px;
+  height: 85vh;
+  width: 100%;
+  margin: 25px 0 0 0;
+  /* top, right, bottom, left */
+}
+
+#introduction-text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#introduction-text {
+  max-width: 700px;
+}
+
+#introduction-image-block {
+  /*background-color: green;*/
+}
+
+/* ------------- Presentation -------------- */
+#presentation-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#presentation-title {
+  margin: 0 0 0 0;
+}
+
+#presentation-text {
+  max-width: 800px;
+}
+
+#introduction-image {
+  width: 300px;
+  height: auto;
+}
+
+/* ------------- pitch-demo-section -------------- */
+#pitch-demo-section {
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+}
+
+/* ------------- among us -------------- */
 #among-us-section {
   display: flex;
   justify-content: center;
@@ -118,7 +254,7 @@ p {
 }
 
 #among-us-left img {
-  width: 500px;
+  width: 300px;
   height: auto;
 }
 
@@ -144,7 +280,6 @@ p {
   margin-top: 0.5rem;
   font-size: 0.9rem;
 }
-
 
 
 /* -------- GENERAL LIST / LINKS STYLING -------- */
@@ -201,8 +336,10 @@ a:hover{
   left: 0;
   width: 100%;
   height: 70px;
-  background-color: rgba(255, 255, 255, 0.6); /* semi-transparent */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*shadow*/
+  background-color: rgba(255, 255, 255, 0.6);
+  /* semi-transparent */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /*shadow*/
 }
 
 #navdiv.scrolled {
@@ -274,14 +411,54 @@ a:hover{
 }
 
 /* ------------- pitch-demo-section -------------- */
-
 #pitch-demo-section {
   background-color: blue;
   display: flex;
   flex-direction: row;
 }
 
+/* ------------- among us -------------- */
+#among-us-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  margin: 2rem auto;
+  width: 90%;
+}
 
+#among-us-left {
+  flex: 1;
+  text-align: center;
+}
+
+#among-us-left img {
+  width: 300px;
+  height: auto;
+}
+
+#among-us-right {
+  flex: 2;
+  text-align: center;
+}
+
+#team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.person img {
+  width: 150px;
+  height: 200px;
+  border-radius: 35%;
+}
+
+.person p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
 
 /* ------------------ DESIGN ------------------- */
 #design-thinking-section {
@@ -292,7 +469,8 @@ a:hover{
 
 #design-thinking-title {
   text-align: center;
-  background-color: #0058a3; /* IKEA blue */
+  background-color: #0058a3;
+  /* IKEA blue */
   color: white;
   padding: 1rem;
   border-radius: 10px;
@@ -326,7 +504,8 @@ a:hover{
 
 .bility p:first-child {
   font-weight: bold;
-  color: #0058a3; /* IKEA green */
+  color: #0058a3;
+  /* IKEA green */
   margin-bottom: 0.6rem;
   font-size: 1.1rem;
 }
@@ -337,11 +516,9 @@ a:hover{
   font-size: 0.95rem;
 }
 
-
-
 /* ------------------ FOOTER ------------------- */
 .footer-section {
-  width: 100%; 
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -349,10 +526,11 @@ a:hover{
   text-align: center;
   padding: 30px;
   background-color: #f5f5f5;
-  box-sizing: border-box; /* padding included in the width */
+  box-sizing: border-box;
+  /* padding included in the width */
 }
 
-.footer-logo{
+.footer-logo {
   display: flex;
   flex-direction: row;
   align-items: center;
