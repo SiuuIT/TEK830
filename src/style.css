@@ -26,7 +26,6 @@ body {
   --font-weight-bolder: 800;
 }
 
-/* -------------- GLOBAL VARIABLES --------------- */
 button {
   background-color: var(--color-blue);
 }
@@ -75,9 +74,6 @@ p {
   font-weight: var(--font-weight-bold);
 }
 
-#among-us-title {
-  text-align: center;
-}
 
 /* ----------- GENERAL BUTTON STYLING ------------ */
 .buttons {
@@ -206,188 +202,6 @@ a:hover {
   max-width: 700px;
 }
 
-#introduction-image-block {
-  /*background-color: green;*/
-}
-
-/* ------------- Presentation -------------- */
-#presentation-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#presentation-title {
-  margin: 0 0 0 0;
-}
-
-#presentation-text {
-  max-width: 800px;
-}
-
-#introduction-image {
-  width: 300px;
-  height: auto;
-}
-
-/* ------------- pitch-demo-section -------------- */
-#pitch-demo-section {
-  background-color: blue;
-  display: flex;
-  flex-direction: row;
-}
-
-/* ------------- among us -------------- */
-#among-us-section {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 3rem;
-  margin: 2rem auto;
-  width: 90%;
-}
-
-#among-us-left {
-  flex: 1;
-  text-align: center;
-}
-
-#among-us-left img {
-  width: 300px;
-  height: auto;
-}
-
-#among-us-right {
-  flex: 2;
-  text-align: center;
-}
-
-#team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 1.5rem;
-}
-
-.person img {
-  width: 150px;
-  height: 200px;
-  border-radius: 35%;
-}
-
-.person p {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-}
-
-
-/* -------- GENERAL LIST / LINKS STYLING -------- */
-ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style: none;
-}
-
-li a {
-    color: var(black);
-    font-weight: var(--font-weight-bold);
-}
-
-a {
-    color: var(black);
-    text-decoration: none;
-    
-}
-
-a:link {
-  color:black;
-
-}
-
-a:visited {
-  color: black;
-
-}
-
-a:hover{
-    text-decoration: underline;
-    text-decoration-color: var(black);
-    cursor: pointer;
-
-}
-
-/* ----------- HEADER AND BURGER MENU ----------- */
-#navbar {
-  padding: 10px 15px;
-}
-  
-#navdiv {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  background-color: rgba(255, 255, 255, 0.6);
-  /* semi-transparent */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /*shadow*/
-}
-
-#navdiv.scrolled {
-  background-color: rgba(255, 255, 255, 0.97);
-}
-
-#filtrera-logo {
-  display: flex;
-  align-items: center;
-}
-
-.start-header{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.link-styling{
-    margin-right: 40px;
-}
-
-/* ----------- INTRODUCTION SECTION ------------ */
-#introduction-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  gap: 200px; 
-  height: 85vh;
-  width: 100%;
-  margin: 25px 0 0 0; /* top, right, bottom, left */
-}
-
-#introduction-text-block{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#introduction-text {
-  max-width: 700px;
-}
-
-#introduction-image-block{
-  /*background-color: green;*/
-}
 
 /* ------------- Pitch -------------- */
 #pitch-section {
@@ -410,11 +224,8 @@ a:hover{
   width: 300px;
   height: auto;
 }
+
 /* ------------- pitch-demo-section -------------- */
-
-
-
-/* ------------- Demo-fact-presentation -------------- */
 #pitch-demo-section {
   display: flex;
   justify-content: space-evenly;
@@ -430,6 +241,11 @@ a:hover{
   margin: 2rem auto;
   width: 90%;
 }
+
+#among-us-title {
+  text-align: center;
+}
+
 
 #among-us-left {
   flex: 1;
@@ -462,6 +278,13 @@ a:hover{
 .person p {
   margin-top: 0.5rem;
   font-size: 0.9rem;
+}
+
+/* ------------- Demo-fact-presentation -------------- */
+#pitch-demo-section {
+  display: flex;
+  justify-content: space-evenly;
+  height: 130vh;
 }
 
 /* ------------------ DESIGN ------------------- */
