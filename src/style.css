@@ -232,6 +232,36 @@ a:hover {
   height: 130vh;
 }
 
+#facts-block{
+  background-color: lightgrey;
+  width: 600px;
+  height: 630px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+}
+
+.fact-item{
+  margin: 20px;
+  padding: 20px;
+}
+
+#pitch-demo-block{
+  width: 800px;
+
+}
+
+#pitch-block{
+  display: flex;
+  justify-content: flex-end;
+  margin: 25px;
+}
+
+#demo-block{
+  display: flex;
+  justify-content: flex-start;
+  margin: 25px;
+}
+
 /* ------------- among us -------------- */
 #among-us-section {
   display: flex;
