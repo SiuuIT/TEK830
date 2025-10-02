@@ -1,6 +1,5 @@
 /* --------- STYLING FOR THE ENTIRE PAGE --------- */
-html,
-body {
+html, body {
   height: 100%;
   width: 100%;
   margin: 0px;
@@ -26,25 +25,15 @@ body {
   --font-weight-bolder: 800;
 }
 
-button {
-  background-color: var(--color-blue);
-}
-
-button:hover {
-  background-color: var(--color-lightblue);
-}
-
 /* ------------- GENERAL TEXT STYLING ------------ */
 p {
   color: var(black);
-  padding: 0 0 0 0;
-  /* top, right, bottom, left*/
+  padding: 0 0 0 0; /* top, right, bottom, left*/
   margin: 0 0 4px 0;
 }
 
 .title {
-  font-size: clamp(30px, 5vw, 95px);
-  /* clamp makes the font size responsive */
+  font-size: clamp(30px, 5vw, 95px); /* clamp makes the font size responsive */
   font-weight: var(--font-weight-bolder);
 }
 
@@ -141,7 +130,7 @@ a:hover {
 
 }
 
-/* ----------- HEADER AND BURGER MENU ----------- */
+/* ----------- HEADER ----------- */
 #navbar {
   padding: 10px 15px;
 }
@@ -156,10 +145,8 @@ a:hover {
   left: 0;
   width: 100%;
   height: 70px;
-  background-color: rgba(241, 239, 239, 0.3);
-  /* semi-transparent */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /*shadow*/
+  background-color: rgba(241, 239, 239, 0.3); /* semi-transparent */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*shadow*/
 }
 
 #filtrera-logo {
@@ -187,8 +174,7 @@ a:hover {
   gap: 200px;
   height: 85vh;
   width: 100%;
-  margin: 25px 0 0 0;
-  /* top, right, bottom, left */
+  margin: 25px 0 0 0; /* top, right, bottom, left */
 }
 
 #introduction-text-block {
@@ -202,6 +188,11 @@ a:hover {
   max-width: 700px;
 }
 
+#introduction-image{
+  width: 300px;
+  height: auto;
+}
+
 
 /* ------------- Pitch -------------- */
 #pitch-section {
@@ -212,20 +203,15 @@ a:hover {
   height: 100vh; 
 }
 
-#presentation-title {
+#pitch-title {
   margin: 0 0 0 0;
 }
 
-#presentation-text {
+#pitch-text {
   max-width: 800px;
 }
 
-#introduction-image{
-  width: 300px;
-  height: auto;
-}
-
-/* ------------- pitch-demo-section -------------- */
+/* -------------Demo-presentation-section -------------- */
 #pitch-demo-section {
   display: flex;
   justify-content: space-evenly;
@@ -245,18 +231,17 @@ a:hover {
   padding: 20px;
 }
 
-#pitch-demo-block{
-  width: 800px;
-
+#demo-presentation-block{
+  max-width: 800px;
 }
 
-#pitch-block{
+#demo-block{
   display: flex;
   justify-content: flex-end;
   margin: 25px;
 }
 
-#demo-block{
+#presentation-block{
   display: flex;
   justify-content: flex-start;
   margin: 25px;
@@ -310,18 +295,10 @@ a:hover {
   font-size: 0.9rem;
 }
 
-/* ------------- Demo-fact-presentation -------------- */
-#pitch-demo-section {
-  display: flex;
-  justify-content: space-evenly;
-  height: 130vh;
-}
-
-/* ------------------ DESIGN ------------------- */
+/* ------------------ Design thinking ------------------- */
 #design-thinking-section {
   padding: 2rem;
   background-color: #f9fafb;
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 #design-thinking-title {
