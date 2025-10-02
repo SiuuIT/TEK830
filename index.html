@@ -68,7 +68,7 @@
       <div id="introduction-text-block">
         <div id="introduction-title">
           <h1 class="subtitle">
-            Safety, made effortless.
+            Safety, made <span id="introduction-word-change">effortless!</span>
           </h1>
         </div>
         <div id="introduction-text">
@@ -251,17 +251,27 @@
 
     <!-- AI  -->
     <section id="AI-section">
-      <div id="AI-titel">
+      <div id="AI-title">
         <p class="subtitle">
-          AI usage
+          AI Usage 🤖
         </p>
-        <p class="text"> 
-          In our project, we explore how Artificial Intelligence can support safety improvements by analyzing incident
-          reports. By using AI tools, patterns in "bad" and "good"
-          reports can be identified — helping to highlight recurring risks and areas where safety procedures are working
-          well. We also used AI (e.g., ChatGPT) to assist with brainstorming,
-          feedback on our pitch, and refining our written content throughout the course.
-        </p>
+      </div>
+      <div id="AI-block">
+        <div id="AI-question">
+          <p class="text">
+            How did we use AI in this project?
+          </p>
+        </div>
+        <div id="AI-answer">
+          <p class="text"> 
+            Great question! We used AI in this project to enhance our content development
+            and streamline our workflow. Specifically, AI helped us generate ideas, refine
+            our text for clarity and impact, and assist with coding tasks. By leveraging AI
+            tools, we were able to speed up the prototyping process and explore innovative
+            solutions more efficiently. This collaboration allowed us to focus more on
+            creativity and problem-solving while ensuring high-quality results.
+          </p>
+        </div>
       </div>
     </section>
   </main>
@@ -280,7 +290,7 @@
           References
         </p>
         <p class="text-small">
-          IKEA - Capstone introduction presentation, 2025-09-11
+          IKEA - Capstone introduction presentation, <i>2025-09-11</i>
         </p>
         <p class="text-small">
           ChatGPT – AI support, offer assistance and information
@@ -312,6 +322,20 @@
         nav.classList.remove('scrolled');
       }
     });
+
+    const words = ["effortless!", "seamless!", "simple!", "intuitive!", "smart!"];
+    let index = 0;
+    const wordElement = document.getElementById('introduction-word-change');
+
+    setInterval(() => {
+    wordElement.style.opacity = 0;
+    setTimeout(() => {
+      index = (index + 1) % words.length;
+      wordElement.textContent = words[index];
+      wordElement.style.opacity = 1;
+      }, 500);
+    }, 3000);
+
   </script>
 
 </body>
