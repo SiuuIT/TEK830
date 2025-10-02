@@ -261,17 +261,25 @@ a:hover {
 /* ------------- among us -------------- */
 #among-us-section {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 3rem;
+  flex-direction: column; /* stack title on top, content below */
+  align-items: center;
+  gap: 2rem;
   margin: 2rem auto;
   width: 90%;
 }
 
 #among-us-title {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
+#among-us-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  width: 100%;
+}
 
 #among-us-left {
   flex: 1;
@@ -279,8 +287,15 @@ a:hover {
 }
 
 #among-us-left img {
-  width: 300px;
+  width: 400px;
   height: auto;
+  margin-bottom: 1rem;
+}
+
+
+#among-us-left p {
+  font-size: 1.5rem;
+  font-weight: 750;
 }
 
 #among-us-right {
@@ -297,10 +312,9 @@ a:hover {
 
 .person img {
   width: 200px;
-  height:auto;
+  height: auto;
   border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*shadow*/
-
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .person p {
