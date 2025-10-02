@@ -212,39 +212,44 @@ a:hover {
 }
 
 /* -------------Demo-presentation-section -------------- */
-#pitch-demo-section {
+#demo-presentation-section{
   display: flex;
+  /*align-items: center;*/
   justify-content: space-evenly;
-  height: 130vh;
+}
+
+#facts-title{
+  margin: 20px;
+  padding: 20px;
 }
 
 #facts-block{
-  background-color: lightgrey;
-  width: 600px;
-  height: 630px;
+  max-width: 600px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
   border-radius: 20px;
+  align-self: flex-start; /*height only as much as the content inside*/
 }
 
 .fact-item{
   margin: 20px;
   padding: 20px;
+  align-items: center;
 }
 
 #demo-presentation-block{
-  max-width: 800px;
+  width: 750px;
 }
 
 #demo-block{
   display: flex;
   justify-content: flex-end;
-  margin: 25px;
+  margin: 0 25px 25px 25px; /* top, right, bottom, left */
 }
 
 #presentation-block{
   display: flex;
   justify-content: flex-start;
-  margin: 25px;
+  margin: 25px 25px 25px 0px; /* top, right, bottom, left */
 }
 
 /* ------------- among us -------------- */
@@ -351,17 +356,15 @@ a:hover {
 }
 
 /* ------------------ FOOTER ------------------- */
-.footer-section {
-  width: 100%;
+#footer-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 30px;
-  background-color: #f5f5f5;
-  box-sizing: border-box;
-  /* padding included in the width */
+  background-color: red;
+  box-sizing: border-box; /* padding included in the width */
 }
 
 .footer-logo {
@@ -371,7 +374,7 @@ a:hover {
 }
 
 .footer-content {
-  width: 80%;
+  background-color: grey;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
