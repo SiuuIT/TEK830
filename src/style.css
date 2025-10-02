@@ -292,9 +292,10 @@ a:hover {
 }
 
 .person img {
-  width: 150px;
-  height: 200px;
+  width: 200px;
+  height:250;
   border-radius: 35%;
+  
 }
 
 .person p {
